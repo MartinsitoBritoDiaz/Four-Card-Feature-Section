@@ -26,16 +26,24 @@ h1, h2{
     color: var(--very-dark-blue);
 }
 
-h1 {
-    font-weight: initial;
+h2 {
+    margin-bottom: -1rem;
+}   
+
+span {
+    font-weight:initial;
 }
 
-p{
+span::before { content: '\A'; white-space: pre;}
+
+p{    
+    font-size: 1.3rem;
+    line-height: 2.5rem;
     color: var(--grayish-blue);
 }
 
 body{
-    min-height: 100vh;
+    min-height: 97vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,34 +59,14 @@ body{
     align-items: center; 
 }
 
-.card p{
-    margin-top: -1rem;
-    line-height: 2.5rem;
-}
-
 /* Card text styles */
 .card-text{
-    margin-top: 4rem;
-    margin-bottom: 3rem;
     text-align: center;
+    margin: 2rem 0rem;
 }
 
 .card-text h1{
-    margin-top: -1rem;
     font-size: 2.6rem;
-}
-
-.card-text h2{
-    margin-top: -1rem;
-    font-size: 2.6rem;
-}
-
-.card-text p{
-    font-size: 1.7rem;
-    margin-top: -3rem;
-    padding: 3rem;
-    
-    line-height: 2.5rem;
 }
 
 /* Others body cards */
@@ -86,8 +74,8 @@ body{
     padding: 1rem 3.5rem;
     margin-bottom: 3rem;
 
-    width: 31rem;
-    height: 24rem;
+    width: 30rem;
+    height: 22rem;
         
     border: 0.3rem solid;
     border-radius: 1rem;
@@ -103,11 +91,11 @@ body{
 }
 
 .card-builder {
-    padding: 1rem 3.5rem;
+    padding: 1rem 3rem;
     margin-bottom: 3rem;
 
-    width: 31rem;
-    height: 24rem;
+    width: 30rem;
+    height: 22rem;
         
     border: 0.3rem solid;
     border-radius: 1rem;
@@ -119,8 +107,8 @@ body{
     padding: 1rem 3.5rem;
     margin-bottom: 3rem;
 
-    width: 31rem;
-    height: 24rem;
+    width: 30rem;
+    height: 22rem;
         
     border: 0.3rem solid;
     border-radius: 1rem;
@@ -133,8 +121,8 @@ body{
     padding: 1rem 3.5rem;
     margin-bottom: 2rem;
 
-    width: 31rem;
-    height: 24rem;
+    width: 30rem;
+    height: 22rem;
         
     border: 0.3rem solid;
     border-radius: 1rem;
@@ -148,6 +136,17 @@ body{
     justify-content: right;
 }
 
+/* Style from frontendMentor */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Styles for destock view */
 @media (min-width: 1440px) {
     .card{
         display: flex;
@@ -162,5 +161,10 @@ body{
     .card-supervisor{
         margin-right: 3rem;
     }
+
+    span::before {display: none;}
     
+    
+    span::after { content: '\A'; white-space: pre;}
 }
+
