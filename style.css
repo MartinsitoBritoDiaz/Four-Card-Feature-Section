@@ -147,7 +147,7 @@ body{
 }
 
 /* Styles for desktop view */
-@media (min-width: 1440px) {
+@media (min-width: 1080px) {
     .card{
         display: flex;
         flex-direction: row;
