@@ -1,0 +1,166 @@
+@import url(https://fonts.google.com/specimen/Poppins);
+
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+/* Styles to titles and paragraph */
+h1, h2{
+    color: var(--very-dark-blue);
+}
+
+h1 {
+    font-weight: initial;
+}
+
+p{
+    color: var(--grayish-blue);
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Primary Card */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.card p{
+    margin-top: -1rem;
+    line-height: 2.5rem;
+}
+
+/* Card text styles */
+.card-text{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.card-text h1{
+    margin-top: -1rem;
+    font-size: 2.6rem;
+}
+
+.card-text h2{
+    margin-top: -1rem;
+    font-size: 2.6rem;
+}
+
+.card-text p{
+    font-size: 1.7rem;
+    margin-top: -3rem;
+    padding: 3rem;
+    
+    line-height: 2.5rem;
+}
+
+/* Others body cards */
+.card-supervisor {
+    padding: 1rem 3.5rem;
+    margin-bottom: 3rem;
+
+    width: 31rem;
+    height: 24rem;
+        
+    border: 0.3rem solid;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px 0 var(--grayish-blue);
+    border-color: var(--cyan) white white white;
+}
+
+/* Cards double */
+.card-double {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.card-builder {
+    padding: 1rem 3.5rem;
+    margin-bottom: 3rem;
+
+    width: 31rem;
+    height: 24rem;
+        
+    border: 0.3rem solid;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px 0 var(--grayish-blue);
+    border-color: var(--red) white white white;
+}
+
+.card-karma{
+    padding: 1rem 3.5rem;
+    margin-bottom: 3rem;
+
+    width: 31rem;
+    height: 24rem;
+        
+    border: 0.3rem solid;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px 0 var(--grayish-blue);
+    border-color: var(--orange) white white white;
+}
+
+/* Finally Card */
+.card-calculator{
+    padding: 1rem 3.5rem;
+    margin-bottom: 2rem;
+
+    width: 31rem;
+    height: 24rem;
+        
+    border: 0.3rem solid;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px 0 var(--grayish-blue);
+    border-color: var(--blue) white white white;
+}
+
+.img-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+@media (min-width: 1440px) {
+    .card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card-calculator{
+        margin-left: 3rem;
+    }
+
+    .card-supervisor{
+        margin-right: 3rem;
+    }
+    
+}
