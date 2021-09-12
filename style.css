@@ -146,7 +146,7 @@ body{
     color: hsl(228, 45%, 44%); 
 }
 
-/* Styles for destock view */
+/* Styles for desktop view */
 @media (min-width: 1440px) {
     .card{
         display: flex;
