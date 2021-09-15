@@ -16,7 +16,6 @@ html{
     box-sizing: border-box;
 }
 
-
 *, *:before, *:after{
     box-sizing: inherit;
 }
@@ -43,7 +42,7 @@ p{
 }
 
 body{
-    min-height: 97vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,10 +76,9 @@ body{
     width: 30rem;
     height: 22rem;
         
-    border: 0.3rem solid;
     border-radius: 1rem;
-    box-shadow: 0 5px 15px 0 var(--grayish-blue);
-    border-color: var(--cyan) white white white;
+    box-shadow: 0 5px 15px 0px var(--grayish-blue);
+    border-top: 5px solid var(--cyan);
 }
 
 /* Cards double */
@@ -162,8 +160,7 @@ body{
         margin-right: 3rem;
     }
 
-    span::before {display: none;}
-    
+    span::before {display: none;}    
     
     span::after { content: '\A'; white-space: pre;}
 }
